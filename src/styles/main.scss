@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
+
+$font-family: 'Manrope', sans-serif;
+
+body{
+   font-family: $font-family; 
+   margin: 0;
+   padding: 0;
+   height: 100vh;
+}
+
+.header{
+    width: 100%;
+    padding: 1rem 0;
+    position: sticky;
+    background: rgba(244, 244, 244, 0.682);
+    backdrop-filter: saturate(100%) blur(5px);
+    
+    .header-search{
+        width: 90%;
+        padding: 1rem;
+        display: block;
+        margin: auto;
+        border-radius: 5rem;
+        border: none;
+        outline: none;
+        font-family: $font-family;
+        font-weight: 500;
+
+        &:focus{
+          outline: none;
+          border: none;
+        }
+    }
+}
+
+.dashboard{
+    width: 100%;
+    table{
+       width: 90%;
+       margin: 1rem auto 0 auto; 
+       border-collapse: collapse;
+
+       th, td {   
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid rgb(230, 230, 230);
+      }
+    //   
+       hr{
+           width: 90%;
+       }
+       input{
+        width: 20px;
+        height: 20px;
+       
+        tbody{
+        .data-list{
+           background-color: aqua; 
+          
+          td{
+            img{  width: 20px;
+              height: 20px;
+              cursor: pointer;
+          }
+         }
+        }
+      }
+    }
+     
+
+    }
+}
+
+.footer{
+    width: 100%;
+    position: fixed;
+    height: fit-content;
+    bottom: 0;
+    margin-bottom: 0;
+    background-color: #ffffff;
+    height: fit-content;
+    // padding: 1rem 2rem 1rem 5rem;
+    background: rgba(228, 228, 228, 0.796);
+    backdrop-filter: saturate(100%) blur(5px);
+    display: flex;
+   // justify-content: space-between;
+
+    button{
+       padding: 1rem 2rem;
+       color: white;
+       font-family: $font-family;
+       font-weight: 500;
+       background-color:#F24C4C; 
+       border: none;
+       border-radius: 5rem;
+       cursor: pointer;
+       margin: 1rem 1rem 1rem 5rem;
+    }
+    .page-buttons{
+       display: flex;
+       flex-direction: row; 
+       margin: auto;
+       transform: translateX(-70px);
+
+    .prev-button{
+       border-radius: 5rem; 
+       background-color: white;
+       border: 2px solid #3BACB6;
+       color: #3BACB6;
+       font-weight: 500;    }   
+    
+       .footer-page-button-inactive{
+       height: fit-content;
+       width: fit-content;
+       color: white;
+       border-radius: 50%;
+       padding: 1rem 1.3rem;
+       font-family: $font-family;
+       font-weight: 600;
+       margin:1rem;
+       background-color: #3BACB6;
+    }
+    .footer-page-button-active{
+       height: fit-content;
+       width: fit-content;
+       color: #3bacb6;
+       border:2px solid #3BACB6;
+       border-radius: 50%;
+       padding: 1rem 1.3rem;
+       font-family: $font-family;
+       font-weight: 600;
+       margin:1rem;
+       background-color: white;
+    }
+  }
+
+}
